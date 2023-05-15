@@ -13,29 +13,16 @@ function BasketCard(props) {
     let num = quantity + 1
     setQuantity(num)
 
-    if (props.handleClick) {
-      props.handleClick(num)
-    }
-
     props.apdate(product.id, num)
-
-    /* if (!props.flag) {
-       props.apdateBasketElement(props.cod, num) 
-      
-    }  */
+    props.setFlag(prev => !prev)
   }
 
   function decrement() {
     let num = quantity -1 < 1 ? 1 : quantity -1;
     setQuantity(num)  
 
-    if (props.handleClick) {
-      props.handleClick(num)
-    }
-
-    
     props.apdate(product.id, num)
-    
+    props.setFlag(prev => !prev)
   }
 
   return (
@@ -62,7 +49,7 @@ function BasketCard(props) {
         </div>
         
         <div className='basket-card-buy'>
-            <div>
+            <div onClick={() => props.handleClick(product)}>
                 <img src={del} alt="" />
             </div>
             <p className='card-price'>{product.price*product.quantity} ₽</p>

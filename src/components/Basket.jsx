@@ -5,6 +5,8 @@ import BasketCard from './BasketCard';
 function Basket(props) {
   let products = props.products;
 
+  const[flag, setFlag] = React.useState(true);
+
   const basketSumm = React.useMemo(() => {
     let summ = 0;
     products.forEach(item => {
@@ -12,7 +14,7 @@ function Basket(props) {
     })
 
     return summ.toFixed(2);
-  }, [products]);
+  }, [products, flag]);
 
 
   return (
@@ -24,11 +26,11 @@ function Basket(props) {
                     {products.map((item, index) => {
                         return (
                         <BasketCard key={item.id} product={item} apdate={props.apdate}
-                                handleClick={props.handleClick} />
+                                handleClick={props.handleClick} setFlag={setFlag} />
                         )}
                     )}
-                    {/* <BasketCard /> */}
                 </div>
+                
                 <div className='form'>
                     <div className='summa'>
                         <p>ИТОГО</p>
