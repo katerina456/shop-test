@@ -1,0 +1,371 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+body {
+  background: #EAEAEA;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.h1 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #101010;
+}
+
+.user-buttons {
+  display: flex;
+}
+
+.user-button {
+  position: relative;
+  width: 62px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.user-button:hover {
+  background-color: #dfdbdb;
+  border-radius: 20px;
+}
+.user-button img {
+  width: auto;
+  height: 20px;
+}
+.user-button div {
+  position: absolute;
+  top: 12px;
+  right: 9px;
+  background: #FFA542;
+  border: none;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+}
+.user-button div p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.catalog {
+  padding-bottom: 20px;
+}
+
+.catalog-chapter {
+  padding-top: 28px;
+}
+
+.catalog-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  row-gap: 30px;
+  justify-content: space-between;
+}
+
+.h2 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #838383;
+  padding-bottom: 20px;
+}
+
+.card {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  padding: 15px 18px 26px 22px;
+  width: 350px;
+  height: 407px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  color: #1C1C27;
+  width: -webkit-fill-available;
+  height: 74px;
+}
+.card-info div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-info div .card-star {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.card-info div .card-star p {
+  color: #838383;
+}
+.card-info div .card-price {
+  color: #FFA542;
+}
+.card-info div .card-price-old {
+  font-size: 13px;
+  line-height: 16px;
+  text-decoration-line: line-through;
+  text-align: center;
+  color: #FFCE7F;
+}
+.card-info div .card-buy {
+  color: #000000;
+  cursor: pointer;
+}
+.card-info div .card-buy:hover {
+  color: #FFA542;
+}
+.card-info img {
+  width: auto;
+  height: 22px;
+  margin-right: 10px;
+}
+
+.footer .container {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 30px 30px 0px 0px;
+  padding: 29px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  height: 149px;
+}
+.footer ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer ul li {
+  list-style: none;
+}
+.footer ul li a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  color: #000000;
+}
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+.footer .footer-menu {
+  height: 100%;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer-menu ul {
+  height: 100%;
+}
+
+.language {
+  width: 111px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.language img {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+.language p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #101010;
+  cursor: pointer;
+}
+.language .active {
+  color: #FFA542;
+}
+
+.messengers {
+  width: 126px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.messengers img {
+  cursor: pointer;
+  width: 30px;
+  height: auto;
+}
+
+.basket {
+  padding: 29px 0;
+}
+
+.basket-products {
+  display: flex;
+  justify-content: space-between;
+}
+
+.choosen-products {
+  display: grid;
+  row-gap: 30px;
+}
+
+.form {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  width: 349px;
+  height: 114px;
+}
+.form p {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+}
+.form .summa {
+  padding: 22px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  background: #101010;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  border: 0;
+  cursor: pointer;
+  width: 349px;
+  height: 65px;
+}
+.button p {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.button:hover {
+  background-color: #FFA542;
+}
+
+.basket-card {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  padding: 18px;
+  width: 633px;
+  height: 218px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.basket-card-info {
+  display: flex;
+}
+.basket-card-info .basket-card-foto img {
+  max-height: 136px;
+}
+
+.counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 125px;
+}
+.counter p {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.ellipse {
+  background: #FFCE7F;
+  width: 35px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.ellipse:hover {
+  background-color: #FFA542;
+}
+
+.basket-card-title {
+  margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.basket-card-title p {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  color: #1C1C27;
+}
+.basket-card-title .basket-card-price {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #AAAAAA;
+  margin-top: 12px;
+}
+
+.basket-card-buy {
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.basket-card-buy p {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #1C1C27;
+  text-align: right;
+}
+.basket-card-buy img {
+  height: 17px;
+  cursor: pointer;
+}

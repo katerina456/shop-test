@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    background: #EAEAEA;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+}
+
+@mixin fonts($weight, $size, $height, $color) {
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+    color: $color;
+}
+
+@mixin rectangle($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin flexJustifyAlign($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.header {
+    .container {
+        @include flexJustifyAlign(space-between, center);
+    }
+}
+
+.h1 {
+    @include fonts(700, 25px, 30px, #101010)
+}
+
+.user-buttons {
+    display: flex;
+}
+
+.user-button {
+    position: relative;
+    @include rectangle(62px, 60px);
+    @include flexJustifyAlign(center, center);
+    cursor: pointer;
+    &:hover {
+        background-color: #dfdbdb;
+        border-radius: 20px
+    }
+    img {
+        @include rectangle(auto, 20px);
+    }
+    div {
+        position: absolute;
+        top: 12px;
+        right: 9px;
+        background: #FFA542;
+        border: none;
+        border-radius: 50%;
+        @include rectangle(18px, 18px);
+        p {
+            @include fonts(500, 15px, 18px, #FFFFFF);
+            text-align: center;
+        }
+    }
+}
+
+.catalog {
+    padding-bottom: 20px;
+}
+
+.catalog-chapter {
+    padding-top: 28px;
+}
+
+.catalog-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    row-gap: 30px;
+    justify-content: space-between;
+}
+
+.h2 {
+    @include fonts(600, 20px, 24px, #838383);
+    padding-bottom: 20px;
+}
+
+.card {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 15px 18px 26px 22px;
+    @include rectangle(350px, 407px);
+    @include flexJustifyAlign(space-between, center);
+    flex-direction: column;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    @include fonts(600, 17px, 21px, #1C1C27);
+    @include rectangle(-webkit-fill-available, 74px);
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .card-star {
+            flex-direction: row;
+            justify-content: flex-start;
+            p {
+                color: #838383;
+            }
+        }
+        .card-price {
+            color: #FFA542;
+        }
+        .card-price-old {
+            font-size: 13px;
+            line-height: 16px;
+            text-decoration-line: line-through;
+            text-align: center;
+            color: #FFCE7F;
+        }
+        .card-buy {
+            color: #000000;
+            cursor: pointer;
+            &:hover {
+                color: #FFA542
+            }
+        }
+    }
+    img {
+        @include rectangle(auto, 22px);
+        margin-right: 10px;
+    }
+}
+
+.footer {
+    .container {
+        background: #FFFFFF;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 30px 30px 0px 0px;
+        padding: 29px;
+        @include flexJustifyAlign(space-between, start);
+        height: 149px;
+    }
+    ul {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        li {
+            list-style: none;
+            a {
+                text-decoration: none;
+                @include fonts(400, 17px, 21px, #000000);
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .footer-menu {
+        height: 100%;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        ul {
+            height: 100%;
+        }
+    }
+}
+
+.language {
+    width: 111px;
+    @include flexJustifyAlign(space-between, center);
+    img {
+        cursor: pointer;
+        @include rectangle(20px, 20px);
+    }
+    p {
+        @include fonts(500, 15px, 18px, #101010);
+        cursor: pointer;
+    }
+    .active {
+        color: #FFA542;
+    }
+}
+
+.messengers {
+    width: 126px;
+    @include flexJustifyAlign(space-between, center);
+    img {
+        cursor: pointer;
+        @include rectangle(30px, auto)
+    }
+}
+
+.basket {
+    padding: 29px 0;
+}
+
+.basket-products {
+    display: flex;
+    justify-content: space-between;
+}
+
+.choosen-products {
+    display: grid;
+    row-gap: 30px;
+}
+
+.form {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    @include rectangle(349px, 114px);
+    p {
+        @include fonts(600, 15px, 18px, #000000);
+    }
+    .summa {
+        padding: 22px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.button {
+    background: #101010;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+    @include rectangle(349px, 65px);
+    p {
+        font-family: 'Montserrat';
+        @include fonts(600, 17px, 21px, #FFFFFF);
+        text-align: center;
+    }
+    &:hover {
+        background-color: #FFA542;
+    }
+}
+
+.basket-card {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 18px;
+    @include rectangle(633px, 218px);
+    @include flexJustifyAlign(space-between, center);
+}
+
+.basket-card-info {
+    display: flex;
+    .basket-card-foto {
+        img {
+            max-height: 136px;
+        }
+    }
+}
+
+.counter {
+    @include flexJustifyAlign(space-between, center);
+    width: 125px;
+    p {
+        @include fonts(600, 17px, 21px, #000000);
+    }
+}
+
+.ellipse {
+    background: #FFCE7F;
+    @include rectangle(35px, 30px);
+    @include flexJustifyAlign(center, center);
+    border-radius: 50%;
+    cursor: pointer;
+    &:hover {
+        background-color: #FFA542;
+    }
+}
+
+.basket-card-title {
+    margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p {
+        @include fonts(500, 17px, 21px, #1C1C27);
+    }
+    .basket-card-price {
+        @include fonts(600, 15px, 18px, #AAAAAA);
+        margin-top: 12px;
+    }
+}
+
+.basket-card-buy {
+    height: 100%;
+    flex-direction: column;
+    @include flexJustifyAlign(space-between, end);
+    p {
+        @include fonts(600, 15px, 18px, #1C1C27);
+        text-align: right;
+    }
+    img {
+        height: 17px;
+        cursor: pointer;
+    }
+}
