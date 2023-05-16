@@ -11,7 +11,7 @@ function Footer() {
     <footer className='footer'>
         <div className='container'>
             <div>
-                <Link to="/">
+                <Link to="/shop-test/">
                     <h1 className='h1'>QPICK</h1>
                 </Link>
             </div>

@@ -42,11 +42,11 @@ function App() {
       <Header count={basketProducts.length} />
 
       <Routes>
-        <Route exact path="/" element={<Catalog products={productsList} 
+        <Route exact path="/shop-test/" element={<Catalog products={productsList} 
               handleClick={addBasketProduct} />} 
         />
 
-        <Route exact path='/basket' element={<Basket products={basketProducts} 
+        <Route exact path='/shop-test/basket' element={<Basket products={basketProducts} 
               handleClick={addBasketProduct}
               apdate={apdateBasketElement} />} 
         />

@@ -10,14 +10,14 @@ function Header(props) {
   return (
     <header className='header'>
         <div className='container'>
-          <Link to="/">
+          <Link to="/shop-test/">
             <h1 className='h1'>QPICK</h1>
           </Link>
           
           <div className='user-buttons'>
             <UserButton img={heart} count={0} />
 
-            <Link to="/basket">
+            <Link to="/shop-test/basket">
               <UserButton img={basket} count={props.count} />
             </Link>
           </div>
