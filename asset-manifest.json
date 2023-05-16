@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.4deecbe4.css",
-    "main.js": "/static/js/main.4788a642.js",
-    "static/media/VK.svg": "/static/media/VK.200332db80feb34aac09a5f6d7d91e63.svg",
-    "static/media/Whatsapp.svg": "/static/media/Whatsapp.8dc15f232a985aef74ed03315e7a3148.svg",
-    "static/media/basket.svg": "/static/media/basket.0755738f949b36eb371956870cd1c963.svg",
-    "static/media/lang.svg": "/static/media/lang.c009d57963bd860a4c814e2befc3e4d7.svg",
-    "static/media/Telegram.svg": "/static/media/Telegram.17041232c86fdbc127e2f87541348769.svg",
-    "static/media/del.svg": "/static/media/del.c3b466f51641c238a464efcaaee70ebf.svg",
-    "static/media/heart.svg": "/static/media/heart.93e16e12c7f65e8a049a7da40e5cf4ca.svg",
-    "index.html": "/index.html",
-    "static/media/star.svg": "/static/media/star.a43f1fcddc9753cf027860154e0a0029.svg",
-    "static/media/plus.svg": "/static/media/plus.ff4b064e5dd4dbda105bb69fb16026ac.svg",
-    "static/media/minus.svg": "/static/media/minus.1288fb6f83d8dd9a8deac8df56ee9c67.svg",
-    "main.4deecbe4.css.map": "/static/css/main.4deecbe4.css.map",
-    "main.4788a642.js.map": "/static/js/main.4788a642.js.map"
+    "main.css": "/shop-test/static/css/main.4deecbe4.css",
+    "main.js": "/shop-test/static/js/main.80a7d0c5.js",
+    "static/media/VK.svg": "/shop-test/static/media/VK.200332db80feb34aac09a5f6d7d91e63.svg",
+    "static/media/Whatsapp.svg": "/shop-test/static/media/Whatsapp.8dc15f232a985aef74ed03315e7a3148.svg",
+    "static/media/basket.svg": "/shop-test/static/media/basket.0755738f949b36eb371956870cd1c963.svg",
+    "static/media/lang.svg": "/shop-test/static/media/lang.c009d57963bd860a4c814e2befc3e4d7.svg",
+    "static/media/Telegram.svg": "/shop-test/static/media/Telegram.17041232c86fdbc127e2f87541348769.svg",
+    "static/media/del.svg": "/shop-test/static/media/del.c3b466f51641c238a464efcaaee70ebf.svg",
+    "index.html": "/shop-test/index.html",
+    "static/media/heart.svg": "/shop-test/static/media/heart.93e16e12c7f65e8a049a7da40e5cf4ca.svg",
+    "static/media/star.svg": "/shop-test/static/media/star.a43f1fcddc9753cf027860154e0a0029.svg",
+    "static/media/plus.svg": "/shop-test/static/media/plus.ff4b064e5dd4dbda105bb69fb16026ac.svg",
+    "static/media/minus.svg": "/shop-test/static/media/minus.1288fb6f83d8dd9a8deac8df56ee9c67.svg",
+    "main.4deecbe4.css.map": "/shop-test/static/css/main.4deecbe4.css.map",
+    "main.80a7d0c5.js.map": "/shop-test/static/js/main.80a7d0c5.js.map"
   },
   "entrypoints": [
     "static/css/main.4deecbe4.css",
-    "static/js/main.4788a642.js"
+    "static/js/main.80a7d0c5.js"
   ]
 }
