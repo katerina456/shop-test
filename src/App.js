@@ -37,8 +37,9 @@ function App() {
   }
 
   return (
-    <BrowserRouter >
+    
     <div className="App">
+      <BrowserRouter >
       <Header count={basketProducts.length} />
 
       <Routes>
@@ -53,8 +54,9 @@ function App() {
       </Routes>
 
       <Footer />
+      </BrowserRouter>
     </div>
-    </BrowserRouter>
+    
   );
 }
 
